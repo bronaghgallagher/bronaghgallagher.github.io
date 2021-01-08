@@ -1,0 +1,58 @@
+*{
+    background-image:linear-gradient(to right,#afaaff, #f7ccff) ;
+}
+.Hero{
+    background: white ;
+    margin: 50px;
+    padding: 50px;
+    border-radius: 25px
+    /* width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right,#afaaff, #f7ccff);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    margin: 50px;
+    padding: 50px;
+    border-radius: 25px;  */
+/*     
+    background-image: url(../images/clouds.jpg);
+    margin: 50px;
+    padding: 50px;
+    border-radius: 25px; */
+
+}
+
+
+
+.grid {
+    /* 8x8 grid at 70px size would mean 560px height?   */
+    background:linear-gradient(to right,#afaaff, #f7ccff);
+    height: 560px;
+    width: 560px;
+    display: flex;   
+    flex-wrap: wrap;
+    
+    
+    
+}
+
+.score-board{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+
+.grid div {
+    background:linear-gradient(to right,#afaaff, #f7ccff);
+    height: 70px;
+    width: 70px;
+}
+
+div{
+    float: left;
+   
+}
+
+
