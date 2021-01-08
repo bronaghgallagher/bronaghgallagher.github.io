@@ -1,0 +1,90 @@
+
+@font-face{
+    src: url(supermariofont.ttf);
+    font-family: mario;
+}
+*{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.game-board
+{
+    background-color: white;
+    width: 600px;
+    height: 600px;
+    float: right;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: repeat(9,1fr)
+}
+
+body{
+    display: flex;
+    margin:auto;
+   
+    /* flex-wrap: wrap; */
+}
+
+.board-div{
+ padding-top: 70px;
+ padding-right: 20px;
+ padding-left: 20px;
+
+}
+
+.heading{
+    max-width: 400px;
+    padding-right: 20px;
+    padding-left: 60px;
+    padding-top:60px;
+    line-height: 20px;
+}
+
+.questions{
+    max-width: 300px;
+    max-height: fit-content;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 40px;
+    
+
+}
+
+.box{
+    /* background: #444; */
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    colour: #AAA;
+
+    perspective: 1000px;
+    /* margin: 1rem; */
+
+}
+
+.box1{
+    display: grid;
+    grid-template-columns: 1fr;
+    transition: all 1s ease;
+    transform-style: preserve-3d;
+
+}
+
+
+
+.card-front {
+    grid-area: 1 / 1;
+    transform: rotateY(180deg);
+}
+
+.card-back {
+    grid-area: 1 / 1;
+}
+
+/* FIX CARD IMAGES WIDTH */
+
+
+.box:hover .box1 {
+    transform: rotateY(180deg);
+}
